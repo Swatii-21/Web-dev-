@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f8fb;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox for body */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+}
+
+.monkey-container {
+  margin-bottom: 20px; /* Space between monkey and form */
+}
+
+.form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.monkey-face {
+  width: 200px;
+  height: 200px;
+  background-color: #f2c29f;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ear {
+  width: 80px;
+  height: 100px;
+  background-color: #f2c29f;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+}
+
+.ear.left {
+  left: -50px;
+}
+
+.ear.right {
+  right: -50px;
+}
+.eye {
+  width: 25px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  transition: transform 0.2s;
+}
+
+.eye.left {
+  left: 60px;
+}
+
+.eye.right {
+  right: 60px;
+}
+ 
+
+.mouth {
+  width: 100px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50% / 40%;
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  border: 2px solid #000;
+}
+ 
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
